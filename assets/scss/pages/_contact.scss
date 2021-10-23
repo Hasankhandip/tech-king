@@ -1,0 +1,88 @@
+//contact-banner-section scss start
+.contact-banner-section {
+  padding-top: 200px;
+  padding-bottom: 150px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e273b;
+    opacity: 0.5;
+    z-index: -1;
+  }
+}
+.contact-banner-path {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.contact-banner-title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 50px;
+}
+.contact-social-link {
+  color: #414141 !important;
+  &:hover {
+    color: $main-color !important;
+  }
+}
+.contact-office-wraper {
+  padding: 60px 30px;
+  text-align: center;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+    .contact-office-address {
+      color: #fff;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $main-color;
+    z-index: -1;
+    transition: 0.4s;
+  }
+}
+.contact-office-title {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.contact-office-address {
+  color: #e0e0e0;
+  margin-bottom: 10px;
+  transition: 0.4s;
+}
+.contact-office-address-link {
+  color: #e0e0e0;
+  text-decoration: underline;
+  transition: 0.4s;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.contact-map-frame {
+  width: 100%;
+  height: 450px;
+  filter: grayscale(1);
+}
+//contact-banner-section scss end

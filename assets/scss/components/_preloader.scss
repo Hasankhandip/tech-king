@@ -1,0 +1,74 @@
+// preloader scss start
+.preloader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: $main-bg;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.load-icon {
+  font-size: 50px;
+  color: #fff;
+  animation: rocket 1s linear;
+  opacity: 0;
+}
+.rocket-icon {
+  transform: rotate(-45deg);
+}
+.text {
+  font-size: 36px;
+  color: #fff;
+}
+
+.dot {
+  animation: preloader 1s infinite linear;
+  animation-delay: 0.5s;
+}
+
+.dot2 {
+  animation-delay: 0.8s;
+}
+.dot3 {
+  animation-delay: 1s;
+}
+@keyframes preloader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rocket {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-40px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-80px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-320px);
+    opacity: 1;
+  }
+}
+// preloader scss end

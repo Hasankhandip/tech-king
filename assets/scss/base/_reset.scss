@@ -1,0 +1,37 @@
+body {
+  font-size: 16px;
+  color: #666;
+  font-family: $heading-font;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  font-family: $heading-font;
+  margin-bottom: 0;
+}
+img {
+  width: 100%;
+}
+p {
+  margin-bottom: 0;
+  color: #414141;
+  font-family: $heading-font;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  transition: 0.4s;
+  &:hover {
+    color: $main-color;
+  }
+}
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
